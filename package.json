@@ -1,0 +1,13 @@
+{
+  "name": "Parallel",
+  "description": "Parallel",
+  "version": "0.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "discord.js": "11.1.0",
+    "request": "2.81.0"
+  }
+}
