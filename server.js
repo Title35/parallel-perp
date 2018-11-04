@@ -95,7 +95,7 @@ client.on('message', message => {
     if (message.content === '`profile') {
     	message.channel.send('Your Profile:')
         client.fetchUser(message.author).then(myUser => {
-    myUser.avatarURL; // My user's avatar is here!
+    message.channel.send(myUser.avatarURL); // My user's avatar is here!
 });
   	}
 });
