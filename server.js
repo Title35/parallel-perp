@@ -72,7 +72,7 @@ message.channel.send({ embed });
 
 client.on('message', message => {
     if (message.content === '`creator') {
-    	message.channel.send('Server Creator: YourUniversal_Salad')
+    	message.channel.send('**Server Creator:** YourUniversal_Salad')
   	}
 });
 
