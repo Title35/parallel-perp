@@ -70,7 +70,17 @@ message.channel.send({ embed });
     }
 });
 
+client.on('message', message => {
+    if (message.content === '`creator') {
+    	message.channel.send('Server Creator: YourUniversal_Salad')
+  	}
+});
 
+client.on('message', message => {
+    if (message.content === '`Creator') {
+    	message.channel.send('Server Creator: YourUniversal_Salad')
+  	}
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
