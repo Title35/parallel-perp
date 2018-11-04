@@ -4,7 +4,7 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 //client.user.setActivity("The Hangout™", {type: "WATCHING"}); 
-let role = message.guild.roles.get("508677603432071178");
+
 client.on('message', message => {
     if (message.content === '`ping') {
     	message.channel.send('Pong')
@@ -73,7 +73,7 @@ client.on('message', message => {
     if (message.content === '`math') {
     	message.channel.send(":nine: :heavy_plus_sign: :keycap_ten: **= ?**")
         if (message.content == '21') {
-        member.addRole(role).catch(console.error);
+        member.addRole('508677603432071178').catch(console.error);
         } else {
         message.channel.send(":x: No Maths for You! :x:")
         }
