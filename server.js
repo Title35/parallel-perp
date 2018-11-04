@@ -18,12 +18,13 @@ client.on('message', message=> {
 client.on('message', message => {
     if (message.content === '`help') {
     	message.channel.send("You've got mail! :mailbox_with_mail:")
-  	}
-});
-message.author.send({embed: {
+  	message.author.send({embed: {
   color: 3447003,
   description: "A very simple Embed!"
-}});
+    }
+});}});
+
+
 
 
 // THIS  MUST  BE  THIS  WAY
