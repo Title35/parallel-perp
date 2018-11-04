@@ -15,6 +15,12 @@ client.on('message', message=> {
 }
 });
 
+client.on('message', message => {
+    if (message.content === '`help') {
+    	message.channel.send("You've got mail! :mailbox_with_mail:")
+  	}
+});
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
