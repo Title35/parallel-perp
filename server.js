@@ -4,7 +4,7 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 //client.user.setActivity("The Hangout™", {type: "WATCHING"}); 
-    client.user.setStatus('dnd', 'Made by BitJSDevs') 
+
 client.on('message', message => {
     if (message.content === '`ping') {
     	message.channel.send('Pong')
