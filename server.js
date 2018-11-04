@@ -72,8 +72,8 @@ message.channel.send({ embed });
 client.on('message', message => {
     if (message.content === '`math') {
     	message.channel.send(":nine: :heavy_plus_sign: :keycap_ten: **= ?**")
-        message.react(":white_check_mark: ")
-        message.react(":x:")
+        message.react('✅')
+        message.react('❌')
   	}
 });
 
