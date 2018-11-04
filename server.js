@@ -105,8 +105,7 @@ client.on('message', message => {
     if (message.content === '=verify') {
        member.addRole(role).catch(console.error);
 channel.fetchMessage(message.author)
-  .then(message.delete);
-  .catch(console.error);
+  .then(message.delete).catch(console.error);
   	}
 });
 
