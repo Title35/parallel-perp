@@ -102,7 +102,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '`verify') {
-        const guildMember = message.member;
+        const guildMember = message.author;
   guildMember.addRole('Hangout Members');
         message.delete(2);
 
