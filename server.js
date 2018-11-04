@@ -74,7 +74,8 @@ client.on('message', message => {
     	message.channel.send(":nine: :heavy_plus_sign: :keycap_ten: **= ?**")
         if (message.content == '21') {
         member.addRole('508677603432071178').catch(console.error);
-        } else {
+        } 
+        if (message.content != '21'){
         message.channel.send(":x: No Maths for You! :x:")
         }
   	}
