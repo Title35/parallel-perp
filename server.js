@@ -88,7 +88,9 @@ let messagecount = parseInt(numberofmessages);
 
 client.on('message', message => {
     if (message.content === '`purge') {
-    message.channel.fetchMessages({ limit: messagecount })
+        message.channel.send('Purge coming soon!')
+    });
+ /*   message.channel.fetchMessages({ limit: messagecount })
   .then(messages => message.channel.bulkDelete(messages));
     message.channel.send('Succesfully purged!')	
     }
@@ -121,7 +123,7 @@ async function purge() {
         purge(); 
 
     }
-});
+}); */
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
