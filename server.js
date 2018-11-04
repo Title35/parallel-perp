@@ -81,6 +81,16 @@ client.on('message', message => {
     	message.channel.send('Server Creator: YourUniversal_Salad')
   	}
 });
+let messagecount = parseInt(numberofmessages);
+
+
+client.on('message', message => {
+    if (message.content === '`purge') {
+    message.channel.fetchMessages({ limit: messagecount })
+  .then(messages => message.channel.bulkDelete(messages));
+    message.channel.send('Succesfully purged!')	
+    }
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
