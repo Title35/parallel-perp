@@ -71,9 +71,10 @@ message.channel.send({ embed });
 });
 client.on('message', message => {
     if (message.content === '`math') {
-    	message.channel.send(":nine: :heavy_plus_sign: :keycap_ten: **= ?**")
-        message.bot.react('✅')
-        message.bot.react('❌')
+    	message.channel.send(":nine: :heavy_plus_sign: :keycap_ten: **= 21**")
+        message.react.me('✅')
+        message.react.me('❌')
+      //  if (message.author)
   	}
 });
 
