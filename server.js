@@ -6,7 +6,7 @@ client.on('ready', () => {
 let roleID = "496703338168057856";
 
 client.on('message', message => {
-    if (message.content === '`ping') {
+    if (message.content === '=ping') {
     	message.channel.send('Pong')
   	}
 });
@@ -19,7 +19,7 @@ client.on('message', message=> {
 });
 
 client.on('message', message => {
-    if (message.content === '`help') {
+    if (message.content === '=help') {
     	message.channel.send("You've got mail! :mailbox_with_mail:")
   	message.author.send({embed: {
   color: 3447003,
@@ -29,7 +29,7 @@ client.on('message', message => {
 });}}); 
 
 client.on('message', message => {
-    if (message.content === '`Help') {
+    if (message.content === '=Help') {
     	message.channel.send("You've got mail! :mailbox_with_mail:")
   	message.author.send({embed: {
   color: 3447003,
@@ -38,22 +38,22 @@ client.on('message', message => {
     }
 });}}); 
 client.on('message', message => {
-    if (message.content === '`Ping') {
+    if (message.content === '=Ping') {
     	message.channel.send('Pong')
   	}
 });
 client.on('message', message => {
-    if (message.content === '`Author') {
+    if (message.content === '=Author') {
     	message.channel.send(":fire: BitJSDevs :fire:")
   	}
 });
 client.on('message', message => {
-    if (message.content === '`author') {
+    if (message.content === '=author') {
     	message.channel.send(":fire: BitJSDevs :fire:")
   	}
 });
 client.on('message', message => {
-    if (message.content === '`coinflip') {
+    if (message.content === '=coinflip') {
 function doRandHT() {
 var rand = ['HEADS!','TAILS!'];
 
@@ -71,13 +71,13 @@ message.channel.send({ embed });
 });
 
 client.on('message', message => {
-    if (message.content === '`creator') {
+    if (message.content === '=creator') {
     	message.channel.send('**Server Creator:** YourUniversal_Salad')
   	}
 });
 
 client.on('message', message => {
-    if (message.content === '`Creator') {
+    if (message.content === '=Creator') {
     	message.channel.send('Server Creator: YourUniversal_Salad')
   	}
 });
@@ -92,7 +92,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === '`profile') {
+    if (message.content === '=profile') {
     	message.channel.send('Your Profile:')
         client.fetchUser(message.author).then(myUser => {
     message.channel.send(myUser.avatarURL); // My user's avatar is here!
@@ -101,9 +101,9 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === '`verify') {
+    if (message.content === '=verify') {
         const guildMember = message.author;
-  guildMember.addRole('Hangout Members');
+  message.author.addRole('Hangout Members');
         message.delete(2);
 
   	}
