@@ -4,7 +4,7 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 //client.user.setActivity("The Hangout™", {type: "WATCHING"}); 
-let role = message.guild.roles.find(r => r.name === "Maths");
+let role = guild.roles.find(r => r.name === "Maths");
 client.on('message', message => {
     if (message.content === '`ping') {
     	message.channel.send('Pong')
