@@ -12,6 +12,9 @@ client.on('message', message => {
 client.on('message', message=> {
     if (message.isMentioned(client.user)) {
     message.channel.send('I am Awake!');
+        client.login(process.env.BOT_TOKEN);
+
+        
 }
 });
 
