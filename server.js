@@ -3,7 +3,8 @@ const client = new Discord.Client();
 client.on('ready', () => {
     console.log('I am ready!');
 });
-let roleID = "496703338168057856";
+let role = message.guild.roles.find(r => r.name === "Hangout Members");
+let member = message.author();
 
 client.on('message', message => {
     if (message.content === '=ping') {
@@ -102,8 +103,10 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '=verify') {
-       
-
+       member.addRole(role).catch(console.error);
+channel.fetchMessage(message.author)
+  .then(message.delete));
+  .catch(console.error);
   	}
 });
 
