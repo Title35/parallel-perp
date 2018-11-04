@@ -4,7 +4,7 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-//client.user.setActivity("The Hangout™", {type: "WATCHING"}); 
+client.user.setStatus('dnd'); 
 
 client.on('message', message => {
     if (message.content === '`ping') {
@@ -94,7 +94,7 @@ client.on('message', message => {
 client.on('message', message => {
   // Ignore messages that aren't from a guild
   if (!message.guild) return;
-
+if (message.author.has('MANAGE_MESSAGES')) {
   // If the message content starts with "!kick"
   if (message.content.startsWith('`kick')) {
     // Assuming we mention someone in the message, this will return the user
@@ -131,6 +131,7 @@ client.on('message', message => {
       message.reply('You didn\'t mention the user to kick!');
     }
   }
+}
 });
 
 
