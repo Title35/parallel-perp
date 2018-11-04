@@ -4,7 +4,7 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 //client.user.setActivity("The Hangout™", {type: "WATCHING"}); 
-
+let role = message.guild.roles.find(r => r.name === "Maths");
 client.on('message', message => {
     if (message.content === '`ping') {
     	message.channel.send('Pong')
@@ -52,7 +52,33 @@ client.on('message', message => {
     	message.channel.send(":fire: BitJSDevs :fire:")
   	}
 });
-  	
+client.on('message', message => {
+    if (message.content === '`coinflip') {
+function doRandHT() {
+var rand = ['HEADS!','TAILS!'];
+
+return rand[Math.floor(Math.random()*rand.length)];
+}
+
+ const embed = {
+"title": `Here is the winner!`,
+"description": doRandHT(),
+"color": 7584788,
+};
+message.channel.send({ embed });
+
+    }
+});
+client.on('message', message => {
+    if (message.content === '`math') {
+    	message.channel.send(":nine: :heavy_plus_sign: :keycap_ten: **= ?**")
+        if (message.content == '21') {
+        member.addRole(role).catch(console.error);
+        } else {
+        message.channel.send(":x: No Maths for You! :x:")
+        }
+  	}
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
