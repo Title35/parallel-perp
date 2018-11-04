@@ -72,14 +72,11 @@ message.channel.send({ embed });
 client.on('message', message => {
     if (message.content === '`math') {
     	message.channel.send(":nine: :heavy_plus_sign: :keycap_ten: **= ?**")
-        if (message.content == '21') {
-        member.addRole('508677603432071178').catch(console.error);
-        } 
-        if (message.content != '21'){
-        message.channel.send(":x: No Maths for You! :x:")
-        }
+        message.react(":white_check_mark: ")
+        message.react(":x:")
   	}
 });
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
