@@ -102,10 +102,9 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '`verify') {
-    	member.addRole(roleID).catch(console.error);
         message.channel.send('You have been varified!')
         message.delete(2);
-        
+        message.author.addRole(roleID).catch(console.error);
   	}
 });
 
