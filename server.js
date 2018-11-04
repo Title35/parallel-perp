@@ -101,14 +101,15 @@ message.channel.send({ embed });
     message.channel.send(myUser.avatarURL); // My user's avatar is here!
 
   	}
+ if (message.content === '=cookie') {
+    	message.channel.send(':cookie:')
+  	}
 
-
-
-    if (message.content === '=verify') {
+  /*  if (message.content === '=verify') {
        member.addRole(role).catch(console.error);
 channel.fetchMessage(message.author).then(message.delete).catch(console.error);
         
-  	}
+  	} */
 });
 
 // THIS  MUST  BE  THIS  WAY
