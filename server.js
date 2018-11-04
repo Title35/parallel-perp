@@ -102,7 +102,8 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '`verify') {
-        message.channel.send('You have been varified!')
+        const guildMember = message.member;
+  guildMember.addRole('bot-added-role');
         message.delete(3);
 
   	}
