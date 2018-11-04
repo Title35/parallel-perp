@@ -82,11 +82,6 @@ client.on('message', message => {
     	message.channel.send('Server Creator: YourUniversal_Salad')
   	}
 });
-
-client.on('message', message => {
-    if (message.content === '`purge') {
-        message.channel.send("Purge coming soon!")
-    });
     
     client.on('guildMemberAdd', member => {
   // Send the message to a designated channel on a server:
