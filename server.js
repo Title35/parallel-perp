@@ -28,8 +28,9 @@ let member = message.author();
   color: 3447003,
   description: "Help coming soon!"
 
+}});
     }
-}}); 
+ 
 
 
     if (message.content === '=Help') {
@@ -38,8 +39,9 @@ let member = message.author();
   color: 3447003,
   description: "Help coming soon!"
 
+}});
     }
-}}); 
+ 
 
     if (message.content === '=Ping') {
     	message.channel.send('Pong')
