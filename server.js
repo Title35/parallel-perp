@@ -103,8 +103,8 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === '`verify') {
         const guildMember = message.member;
-  guildMember.addRole('bot-added-role');
-        message.delete(3);
+  guildMember.addRole('Hangout Members');
+        message.delete(2);
 
   	}
 });
