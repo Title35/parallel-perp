@@ -3,8 +3,6 @@ const client = new Discord.Client();
 client.on('ready', () => {
     console.log('I am ready!');
 });
-let role = message.guild.roles.find(r => r.name === "Hangout Members");
-let member = message.author();
 
 client.on('message', message => {
     let role = message.guild.roles.find(r => r.name === "Hangout Members");
