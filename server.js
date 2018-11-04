@@ -21,8 +21,8 @@ client.on('message', message=> {
 client.on('message', message => {
     if (message.content === '`help') {
     	message.channel.send("You've got mail! :mailbox_with_mail:")
-  	message.author.send({embed: {
-  _embed #channel title=Leaders | description=The leaders of The Hangout™ | thumbnail=https://cdn.discordapp.com/attachments/496703299672735756/508652160939065344/Hangout2.jpg | field=name=Supreme Leader - value=YourUniversal_Salad | field=name=Hangout Overseer value=UnderPerfection inline=no | field=name=President value=YourGerman_Salad inline=no | field=name=Vice President value=Bitmona inline=no | color=#7e77ff
+  	message.author.send({{"embed":{"image":{"url":"https://cdn.discordapp.com/attachments/496703299672735756/508658340625383444/Hangout2.jpg"},"footer":{"text":"The Hangout™"},"color":3553598,"fields":[{"name":"Supreme Leader","value":"YourUniversal_Salad","inline":false},{"name":"Hangout Overseer","value":"UnderPerfection","inline":false},{"name":"President","value":"YourGerman_Salad","inline":false},{"name":"Vice President","value":"Bitmona","inline":false}]}}
+ 
     }
 });}});
 client.on('message', message => {
