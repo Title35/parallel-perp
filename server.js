@@ -3,8 +3,8 @@ const client = new Discord.Client();
 client.on('ready', () => {
     console.log('I am ready!');
 });
-let cont = message.content.slice(prefix.length).split(“ “)
-let args = cont.slice(1);
+//let cont = message.content.slice(prefix.length).split(“ “)
+//let args = cont.slice(1);
 //client.user.setActivity("The Hangout™", {type: "WATCHING"}); 
 
 client.on('message', message => {
