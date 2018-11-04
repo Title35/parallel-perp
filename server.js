@@ -3,7 +3,7 @@ const client = new Discord.Client();
 client.on('ready', () => {
     console.log('I am ready!');
 });
-
+let roleID = "496703338168057856";
 
 client.on('message', message => {
     if (message.content === '`ping') {
@@ -97,6 +97,15 @@ client.on('message', message => {
         client.fetchUser(message.author).then(myUser => {
     message.channel.send(myUser.avatarURL); // My user's avatar is here!
 });
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '`verify') {
+    	member.addRole(roleID).catch(console.error);
+        message.channel.send('You have been varified!')
+        message.delete(2);
+        
   	}
 });
 
