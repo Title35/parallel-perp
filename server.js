@@ -96,11 +96,11 @@ client.on('message', message => {
     	message.channel.send('Your Profile:')
         client.fetchUser(message.author).then(myUser => {
     message.channel.send(myUser.avatarURL); // My user's avatar is here!
-});
+
   	}
 });
 
-client.on('message', message => {
+/*client.on('message', message => {
     let role = message.guild.roles.find(r => r.name === "Hangout Members");
 let member = message.author();
     if (message.content === '=verify') {
@@ -108,7 +108,7 @@ let member = message.author();
 channel.fetchMessage(message.author).then(message.delete).catch(console.error);
         
   	}
-});
+}); */
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
