@@ -99,6 +99,8 @@ client.on('message', message => {
 
  })}});
 client.on('message', async message => {  
+     const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+  const command = args.shift().toLowerCase();
 if(message.content === "=kick") {
     // This command must be limited to mods and admins. In this example we just hardcode the role names.
     // Please read on Array.some() to understand this bit: 
