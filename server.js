@@ -100,15 +100,5 @@ client.on('message', message => {
   	}
 });
 
-/*client.on('message', message => {
-    let role = message.guild.roles.find(r => r.name === "Hangout Members");
-let member = message.author();
-    if (message.content === '=verify') {
-       member.addRole(role).catch(console.error);
-channel.fetchMessage(message.author).then(message.delete).catch(console.error);
-        
-  	}
-}); */
-
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
