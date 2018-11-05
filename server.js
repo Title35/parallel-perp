@@ -98,7 +98,7 @@ client.on('message', message => {
     message.channel.send(myUser.avatarURL); // My user's avatar is here!
 
   	}
-});
+}});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
