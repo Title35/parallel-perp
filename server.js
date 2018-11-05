@@ -37,8 +37,7 @@ let member = message.author();
   color: 3447003,
   description: "Help coming soon!"
 
-}});
-    }
+}});}
  
 
     if (message.content === '=Ping') {
@@ -49,7 +48,7 @@ let member = message.author();
     if (message.content === '=Author') {
     	message.channel.send(":fire: BitJSDevs :fire:")
   	}
-});
+
 
     if (message.content === '=author') {
     	message.channel.send(":fire: BitJSDevs :fire:")
