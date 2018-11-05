@@ -98,7 +98,7 @@ client.on('message', message => {
     message.channel.send(myUser.avatarURL); // My user's avatar is here!
 
  })}});
-client.on('message', message => {  
+client.on('message', async message => {  
 if(message.content === "=kick") {
     // This command must be limited to mods and admins. In this example we just hardcode the role names.
     // Please read on Array.some() to understand this bit: 
