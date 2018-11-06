@@ -54,7 +54,7 @@ client.on('message', message => {
     	message.channel.send(":fire: BitJSDevs :fire:")
   	}
 });
-client.on('message', message => {
+client.on('message', message => {f
     if (message.content === '=coinflip') {
 function doRandHT() {
 var rand = ['HEADS!','TAILS!'];
@@ -91,7 +91,8 @@ client.on('message', message => {
   if (!channel) return;
   // Send the message, mentioning the member
   channel.send(`Welcome ${member} to The Hangout!™ Please look at #rules-info before doing anything in the server. If you need any help, say -new in #bot-commands! Have fun!`);
-  member.addRole("Hangout Members")
+let role = message.guild.roles.find(r => r.name === "Unverified") 
+member.addRole(role)
 });
 
 client.on('message', message => {
@@ -123,7 +124,8 @@ client.on('message', message => {
     client.on('message', message => {
     if (message.content === '=verify') {
     if (!message.member.roles.has("UnverifiedID")) 
-messsage.member.addRole("Hangout Members")
+let role = message.guild.roles.find(r => r.name === "Hangout Members") 
+     member.addRole(role)
   	}
 });
     
