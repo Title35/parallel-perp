@@ -58,7 +58,7 @@ client.on('message', message => {
     	message.channel.send(":fire: BitJSDevs :fire:")
   	}
 });
-client.on('message', message => {f
+client.on('message', message => {
     if (message.content === '=coinflip') {
 function doRandHT() {
 var rand = ['HEADS!','TAILS!'];
