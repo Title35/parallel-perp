@@ -1,9 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 client.on('ready', () => {
-    console.log('I am ready!');
+    console.log('I am ready to go to work! :spongebob:');
     client.user.setPresence({ game: { name: "on The Hangout™ Server!" }, status: 'dnd' })
     .catch(console.error);
+   message.channel.send('I am ready to go to work! :spongebob:')
 });
 
 
@@ -11,6 +12,7 @@ client.on('message', message => {
     if (message.content === '=ping') {
     	message.channel.send('Pong')
   	}
+    
 });
 client.on('message', message=> {
     if (message.isMentioned(client.user)) {
