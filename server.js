@@ -6,7 +6,7 @@ client.on('ready', () => {
     .catch(console.error);
    const channel = client.channels.find(ch => ch.name === 'bot-status');
     channel.send("I am ready to go to work! :spongebob:")
-    message.delete(2)
+    client.message.delete(2)
   .then(msg => console.log(`Deleted message from ${msg.author.username}`))
   .catch(console.error);
     
