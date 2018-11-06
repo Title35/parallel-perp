@@ -4,7 +4,7 @@ client.on('ready', () => {
     console.log('I am ready to go to work!');
     client.user.setPresence({ game: { name: "on The Hangout™ Server!" }, status: 'dnd' })
     .catch(console.error);
-   const channel = client.channels.find(ch => ch.name === 'bot-status');
+   const channel = client.channels.find(ch => ch.name === 'bot-spam');
     //channel.send("I am ready to go to work! :spongebob:")
     channel.send({embed: {
   color: 3447003,
