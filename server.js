@@ -103,9 +103,10 @@ client.on("message", message => {
      var member = message.mentions.members.first();
     if (message.content.startsWith("=kick")) {
         // Easy way to get member object though mentions.
-     if(message.author.roles.some(r=>["Staff Members"].includes(r.name)) ) {
+     if(!message.author.roles.some(r=>["Staff Members"].includes(r.name)) ) {
       return message.reply("Sorry, you don't have permissions to use this!"); 
-     } else { 
+     } 
+     else { 
         // Kick
         member.kick().then((member) => {
             // Successmessage
@@ -113,12 +114,9 @@ client.on("message", message => {
         }).catch(() => {
              // Failmessage
             message.channel.send("Access Denied");
-        }
+        })}    
     }
 });
-
-    if(!message.member.roles.some(r=>["Staff Members"].includes(r.name)) )
-      return message.reply("Sorry, you don't have permissions to use this!");
     
     
 
