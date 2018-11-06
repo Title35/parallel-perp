@@ -124,7 +124,7 @@ client.on('message', message => {
     client.on('message', message => {
     if (message.content === '=verify') {
     if (!message.member.roles.has("UnverifiedID")) 
-let role = message.guild.roles.find(r => r.name === "Hangout Members") 
+const role = message.guild.roles.find(r => r.name === "Hangout Members") 
      member.addRole(role)
   	}
 });
