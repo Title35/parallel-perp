@@ -91,7 +91,7 @@ client.on('message', message => {
   if (!channel) return;
   // Send the message, mentioning the member
   channel.send(`Welcome ${member} to The Hangout!™ Please look at #rules-info before doing anything in the server. If you need any help, say -new in #bot-commands! Have fun!`);
-let role = message.guild.roles.find(r => r.name === "Unverified") 
+const role = message.guild.roles.find(r => r.name === "Unverified") 
 member.addRole(role)
 });
 
