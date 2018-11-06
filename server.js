@@ -2,7 +2,9 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 client.on('ready', () => {
     console.log('I am ready!');
-     client.user.setActivity("The Hanout™", {type: "WATCHING"});
+    client.user.setPresence({ game: { name: 'on The Hangout™ Server!' }, status: 'dnd' })
+    .then(console.log)
+    .catch(console.error);
 });
 
 
