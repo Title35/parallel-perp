@@ -91,6 +91,7 @@ client.on('message', message => {
   if (!channel) return;
   // Send the message, mentioning the member
   channel.send(`Welcome ${member} to The Hangout!™ Please look at #rules-info before doing anything in the server. If you need any help, say -new in #bot-commands! Have fun!`);
+  member.addRole("Hangout Members")
 });
 
 client.on('message', message => {
@@ -119,7 +120,12 @@ client.on('message', message => {
     }
 });
 
-    
+    client.on('message', message => {
+    if (message.content === '=verify') {
+    if (!message.member.roles.has("UnverifiedID")) 
+messsage.member.addRole("Hangout Members")
+  	}
+});
     
     
 
