@@ -104,7 +104,7 @@ client.on('message', message => {
      var memberg = message.mentions.members.first();
     if (message.content.startsWith("=kick")) {
         // Easy way to get member object through mentions.
-     if(!message.member.roles.some(r=>["Staff Members"].includes(r.name)) ) {
+     if(!message.member.roles.has.some(r=>["Staff Members"].includes(r.name)) ) {
       return message.reply("Sorry, you don't have permissions to use this!"); 
      } 
      else { 
