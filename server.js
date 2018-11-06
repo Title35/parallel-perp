@@ -100,8 +100,14 @@ client.on('message', message => {
   // Do nothing if the channel wasn't found on this server
   if (!channel) return;
   // Send the message, mentioning the member
-  channel.send(`Welcome ${member} to The Hangout!™ Please look at #rules-info before doing anything in the server. If you need any help, say -new in #bot-commands! Have fun!`);
-});
+  channel.send({embed: {
+  color: #8854af,
+  description: "Welcome ${member} to The Hangout!™ Please look at #rules-info before doing anything in the server. If you need any help, say -new in #bot-commands! Have fun!",
+  "image": {
+                "url": "https://cdn.discordapp.com/attachments/420986851005038592/509377696271171586/sticker-6-112.png",
+                }      
+}});
+    });
 
 client.on('message', message => {
     if (message.content === '=profile') {
