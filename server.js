@@ -5,7 +5,7 @@ client.on('ready', () => {
     client.user.setPresence({ game: { name: "on The Hangout™ Server!" }, status: 'dnd' })
     .catch(console.error);
    const channel = client.channels.find(ch => ch.name === 'bot-status');
-    channel.send("I am ready to go to work! :spongebob:"
+    channel.send("I am ready to go to work! :spongebob:")
 });
 
 
