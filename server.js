@@ -8,7 +8,7 @@ client.on('ready', () => {
     //channel.send("I am ready to go to work! :spongebob:")
     channel.send({embed: {
   color: 3447003,
-  description: "I'm ready, I'm ready! To go to work!"
+  description: "I'm ready, I'm ready! To go to work!",
   "image": {
                 "url": "https://cdn.discordapp.com/attachments/420986851005038592/509377696271171586/sticker-6-112.png",
                 }      
