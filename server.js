@@ -2,8 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 client.on('ready', () => {
     console.log('I am ready!');
-    client.user.setPresence({ game: { name: 'on The Hangout™ Server!' }, status: 'dnd' })
-    .then(console.log)
+    client.user.setPresence({ game: { name: "on The Hangout™ Server!" }, status: 'dnd' })
     .catch(console.error);
 });
 
@@ -101,24 +100,26 @@ client.on('message', message => {
     message.channel.send(myUser.avatarURL); // My user's avatar is here!
 
  })}});
-client.on("message", message => {
-     var member = message.mentions.members.first();
+client.on('message', message => {
+     var memberg = message.mentions.members.first();
     if (message.content.startsWith("=kick")) {
-        // Easy way to get member object though mentions.
-     if(!message.author.roles.some(r=>["Staff Members"].includes(r.name)) ) {
+        // Easy way to get member object through mentions.
+     if(!message.member.roles.some(r=>["Staff Members"].includes(r.name)) ) {
       return message.reply("Sorry, you don't have permissions to use this!"); 
      } 
      else { 
         // Kick
-        member.kick().then((member) => {
+        memberg.kick().then((member) => {
             // Successmessage
-            message.channel.send(":wave: " + member.displayName + " has been successfully kicked :point_right: ");
+            message.channel.send(":wave: " + memberg.displayName + " has been successfully kicked :point_right: ");
         }).catch(() => {
              // Failmessage
             message.channel.send("Access Denied");
         })}    
     }
 });
+
+    
     
     
 
