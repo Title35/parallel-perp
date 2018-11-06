@@ -87,11 +87,11 @@ client.on('message', message => {
     client.on('guildMemberAdd', member => {
   // Send the message to a designated channel on a server:
   const channel = member.guild.channels.find(ch => ch.name === 'welcome');
+  let role = message.guild.roles.find(r => r.name === "Unverified") 
   // Do nothing if the channel wasn't found on this server
   if (!channel) return;
   // Send the message, mentioning the member
   channel.send(`Welcome ${member} to The Hangout!™ Please look at #rules-info before doing anything in the server. If you need any help, say -new in #bot-commands! Have fun!`);
-const role = message.guild.roles.find(r => r.name === "Unverified") 
 member.addRole(role)
 });
 
@@ -122,10 +122,11 @@ client.on('message', message => {
 });
 
     client.on('message', message => {
-    if (message.content === '=verify') {
-    if (!message.member.roles.has("UnverifiedID")) 
-const role = message.guild.roles.find(r => r.name === "Hangout Members") 
+        let role = message.guild.roles.find(r => r.name === "Hangout Members") 
+        if (message.content === '=verify') {
+    if (!message.member.roles.has("Unverified")) {
      member.addRole(role)
+    }
   	}
 });
     
