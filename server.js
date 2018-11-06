@@ -124,7 +124,7 @@ client.on('message', message => {
     client.on('message', message => {
         let role = message.guild.roles.find(r => r.name === "Hangout Members") 
         if (message.content === '=verify') {
-    if (!message.member.roles.has("Unverified")) {
+    if (message.member.roles.has("Unverified")) {
      member.addRole(role)
     }
   	}
