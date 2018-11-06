@@ -99,10 +99,10 @@ client.on('message', message => {
     message.channel.send(myUser.avatarURL); // My user's avatar is here!
 
  })}});
-client.on("message", (message) => {
-    if (message.content.startsWith("/kick")) {
+client.on("message", message => {
+    if (message.content.startsWith("=kick")) {
         // Easy way to get member object though mentions.
-     if(!message.member.roles.some(r=>["Staff Members"].includes(r.name)) ) {
+     if(message.author.roles.some(r=>["Staff Members"].includes(r.name)) ) {
       return message.reply("Sorry, you don't have permissions to use this!"); 
      } else { var member= message.mentions.members.first();
         // Kick
@@ -112,7 +112,7 @@ client.on("message", (message) => {
         }).catch(() => {
              // Failmessage
             message.channel.send("Access Denied");
-        }});
+        }
     }
 });
 
