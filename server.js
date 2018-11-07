@@ -173,7 +173,6 @@ client.on('message', message => {
 const embed = {
   "title": "**Server Leaders**",
   "description": "The Leaders Of The Hangout™",
-  "url": "https://discordapp.com",
   "color": 5134148,
   "timestamp": "2018-11-07T23:32:42.204Z",
   "footer": {
@@ -203,7 +202,8 @@ const embed = {
     }
   ]
 };
-message.channel.send({ embed });
+message.author.send({ embed });
+        message.channel.send("Check your inbox!📧")
           	}
 });
 
