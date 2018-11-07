@@ -186,7 +186,7 @@ const embed = {
   "fields": [
     {
       "name": "🌟Supreme Leader🌟",
-      "value": "YourUniversal_Salas"
+      "value": "YourUniversal_Salad"
     },
     {
       "name": "⭐Hangout Overseer⭐",
@@ -203,7 +203,7 @@ const embed = {
   ]
 };
 message.author.send({ embed });
-        message.channel.send("Check your inbox!📧")
+        message.channel.send("Check your inbox! 📧")
           	}
 });
 
