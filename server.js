@@ -165,10 +165,46 @@ client.on('message', message => {
     	 message.channel.send("**Here is meme 3:**", {files: ["https://cdn.discordapp.com/attachments/289908213413838859/509547443621330954/4912653.jpg"]});
   	}
 });
-  client.on('message', message => {
-    if (message.content === '=meme4') {
-    	 message.channel.send("**Here is meme 4:**", {files: ["https://cdn.discordapp.com/attachments/289908213413838859/509547448667078656/4912658.jpg"]});
-  	}
+  
+client.on('message', message => {
+    if (message.content === '=leaders') {
+        
+
+const embed = {
+  "title": "**Server Leaders**",
+  "description": "The Leaders Of The Hangout™",
+  "url": "https://discordapp.com",
+  "color": 5134148,
+  "timestamp": "2018-11-07T23:32:42.204Z",
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/499263085270401048/509457397979283490/Hangout2.jpg",
+    "text": "Server Leaders"
+  },
+  "author": {
+    "name": "Hangout™ Bot",
+    "icon_url": "https://cdn.discordapp.com/attachments/499263085270401048/509457397979283490/Hangout2.jpg"
+  },
+  "fields": [
+    {
+      "name": "🌟Supreme Leader🌟",
+      "value": "YourUniversal_Salas"
+    },
+    {
+      "name": "⭐Hangout Overseer⭐",
+      "value": "UnderPerfection"
+    },
+    {
+      "name": "💥President💥",
+      "value": "YourGerman_Salad"
+    },
+    {
+      "name": "⚡Vice President⚡",
+      "value": "Bitmona"
+    }
+  ]
+};
+channel.send({ embed });
+          	}
 });
 
 // THIS  MUST  BE  THIS  WAY
