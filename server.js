@@ -102,7 +102,7 @@ client.on('message', message => {
   // Send the message, mentioning the member
   channel.send({embed: {
   color: 10765745,
-  description: `Welcome ${member} to The Hangout!™ Please look at #rules-info before doing anything in the server. If you need any help, say -new in #bot-commands! Have fun!`,
+  description: `🎉Welcome ${member} to The Hangout!™ Please look at #rules-info before doing anything in the server. If you need any help, say -new in #bot-commands! Have fun!🎉`,
   "image": {
                 "url": "https://cdn.discordapp.com/attachments/499263085270401048/509543124683456512/Hangout2.jpg",
                 }      
@@ -116,7 +116,13 @@ client.on('message', message => {
     message.channel.send(myUser.avatarURL); // My user's avatar is here!
 
  })}});
+
 client.on('message', message => {
+    if (message.content === '=') {
+    	message.channel.send('Server Creator: YourUniversal_Salad')
+  	}
+});
+/*client.on('message', message => {
      var memberg = message.mentions.members.first();
     if (message.content.startsWith("=kick")) {
         // Easy way to get member object through mentions.
@@ -143,8 +149,12 @@ client.on('message', message => {
     } 
   } 
 });
-    
-    
+*/    
+    client.on('message', message => {
+    if (message.content === '=meme1') {
+    	 message.channel.send("**Here is meme 1:**", {files: ["https://cdn.discordapp.com/attachments/289908213413838859/509547440399974421/4912651.jpg"]});
+  	}
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
