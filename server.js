@@ -102,9 +102,9 @@ client.on('message', message => {
   // Send the message, mentioning the member
   channel.send({embed: {
   color: 10765745,
-  description: "Welcome ${member} to The Hangout!™ Please look at #rules-info before doing anything in the server. If you need any help, say -new in #bot-commands! Have fun!",
+  description: `Welcome ${member} to The Hangout!™ Please look at #rules-info before doing anything in the server. If you need any help, say -new in #bot-commands! Have fun!`,
   "image": {
-                "url": "https://cdn.discordapp.com/attachments/420986851005038592/509377696271171586/sticker-6-112.png",
+                "url": "https://cdn.discordapp.com/attachments/499263085270401048/509457397979283490/Hangout2.jpg",
                 }      
 }});
     });
