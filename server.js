@@ -104,7 +104,7 @@ client.on('message', message => {
   color: 10765745,
   description: `Welcome ${member} to The Hangout!™ Please look at #rules-info before doing anything in the server. If you need any help, say -new in #bot-commands! Have fun!`,
   "image": {
-                "url": "https://cdn.discordapp.com/attachments/499263085270401048/509457397979283490/Hangout2.jpg",
+                "url": "https://cdn.discordapp.com/attachments/499263085270401048/509543124683456512/Hangout2.jpg",
                 }      
 }});
     });
