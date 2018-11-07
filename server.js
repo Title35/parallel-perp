@@ -155,6 +155,21 @@ client.on('message', message => {
     	 message.channel.send("**Here is meme 1:**", {files: ["https://cdn.discordapp.com/attachments/289908213413838859/509547440399974421/4912651.jpg"]});
   	}
 });
+  client.on('message', message => {
+    if (message.content === '=meme2') {
+    	 message.channel.send("**Here is meme 2:**", {files: ["https://cdn.discordapp.com/attachments/289908213413838859/509547445949300737/4912655.jpg"]});
+  	}
+});
+  client.on('message', message => {
+    if (message.content === '=meme3') {
+    	 message.channel.send("**Here is meme 3:**", {files: ["https://cdn.discordapp.com/attachments/289908213413838859/509547443621330954/4912653.jpg"]});
+  	}
+});
+  client.on('message', message => {
+    if (message.content === '=meme4') {
+    	 message.channel.send("**Here is meme 4:**", {files: ["https://cdn.discordapp.com/attachments/289908213413838859/509547448667078656/4912658.jpg"]});
+  	}
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
