@@ -203,7 +203,7 @@ const embed = {
     }
   ]
 };
-channel.send({ embed });
+message.channel.send({ embed });
           	}
 });
 
