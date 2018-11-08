@@ -33,22 +33,89 @@ client.on('message', message=> {
 client.on('message', message => {
     if (message.content === '=help') {
     	message.channel.send("You've got mail! :mailbox_with_mail:")
-  	message.author.send({embed: {
-  color: 3447003,
-  description: "Help coming soon!"
-
+  const embed = {
+  "title": "Bot Help",
+  "description": "The help section for The Official Hangout™ Bot.",
+  "color": 8993666,
+  "timestamp": "2018-11-08T01:16:53.026Z",
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/499263085270401048/509457397979283490/Hangout2.jpg",
+    "text": "Server Help"
+  },
+  "author": {
+    "name": "Hangout™ Bot",
+    "icon_url": "https://cdn.discordapp.com/attachments/499263085270401048/509457397979283490/Hangout2.jpg"
+  },
+  "fields": [
+    {
+      "name": "Fun Commands",
+      "value": "Profile - '=profile' Shows Your profile picture! \nCoinFlip - '=coinflip' Flips a coin! "
+    },
+    {
+      "name": "Info Commands",
+      "value": "Creator - '=creator' Tells you server creator! \nAuthor - '=author' Tells you bot author! \nLeaders - '=leaders' Sends you server leader list in DM's! \nHelp - '=help' Sends you Hangout™ Bot help in DM's! "
+    },
+    {
+      "name": "Memes",
+      "value": "Meme commands shall be updated frequently \nMeme1 - '=meme1' Shows you Meme 1! \nMeme2 - '=meme2' Shows you Meme 1! \nMeme3 - '=meme3' Shows you Meme 1! \nMeme4 - '=meme4' Shows you Meme 1!"
+    },
+    {
+      "name": "Other",
+      "value": "Ping - '=ping' Bot responds with pong! \n@Mention - Mention the bot to see if it's online!"
+    },
+    {
+      "name": "Notes",
+      "value": "Please keep an :eye: on the bot-status channel to see new info! \nThe Bot will be frequently updated so stay alert for updates!"
     }
-});}}); 
+  ]
+};
+message.author.send({ embed });	
+    }
+});
 
 client.on('message', message => {
     if (message.content === '=Help') {
     	message.channel.send("You've got mail! :mailbox_with_mail:")
-  	message.author.send({embed: {
-  color: 8993652,
-  description: "Help coming soon!"
+  	const embed = {
+  "title": "Bot Help",
+  "description": "The help section for The Official Hangout™ Bot.",
+  "color": 8993666,
+  "timestamp": "2018-11-08T01:16:53.026Z",
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/499263085270401048/509457397979283490/Hangout2.jpg",
+    "text": "Server Help"
+  },
+  "author": {
+    "name": "Hangout™ Bot",
+    "icon_url": "https://cdn.discordapp.com/attachments/499263085270401048/509457397979283490/Hangout2.jpg"
+  },
+  "fields": [
+    {
+      "name": "Fun Commands",
+      "value": "Profile - '=profile' Shows Your profile picture! \nCoinFlip - '=coinflip' Flips a coin! "
+    },
+    {
+      "name": "Info Commands",
+      "value": "Creator - '=creator' Tells you server creator! \nAuthor - '=author' Tells you bot author! \nLeaders - '=leaders' Sends you server leader list in DM's! \nHelp - '=help' Sends you Hangout™ Bot help in DM's! "
+    },
+    {
+      "name": "Memes",
+      "value": "Meme commands shall be updated frequently \nMeme1 - '=meme1' Shows you Meme 1! \nMeme2 - '=meme2' Shows you Meme 1! \nMeme3 - '=meme3' Shows you Meme 1! \nMeme4 - '=meme4' Shows you Meme 1!"
+    },
+    {
+      "name": "Other",
+      "value": "Ping - '=ping' Bot responds with pong! \n@Mention - Mention the bot to see if it's online!"
+    },
+    {
+      "name": "Notes",
+      "value": "Please keep an :eye: on the bot-status channel to see new info! \nThe Bot will be frequently updated so stay alert for updates!"
+    }
+  ]
+};
+message.author.send({ embed });
 
     }
-});}}); 
+});
 client.on('message', message => {
     if (message.content === '=Ping') {
     	message.channel.send('Pong')
@@ -117,11 +184,11 @@ client.on('message', message => {
 
  })}});
 
-client.on('message', message => {
+/*client.on('message', message => {
     if (message.content === '=') {
     	message.channel.send('Server Creator: YourUniversal_Salad')
-  	}
-});
+  	} 
+}); */
 /*client.on('message', message => {
      var memberg = message.mentions.members.first();
     if (message.content.startsWith("=kick")) {
