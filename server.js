@@ -44,7 +44,7 @@ client.on('message', message => {
     if (message.content === '=Help') {
     	message.channel.send("You've got mail! :mailbox_with_mail:")
   	message.author.send({embed: {
-  color: 3447003,
+  color: 8993652,
   description: "Help coming soon!"
 
     }
@@ -75,7 +75,7 @@ return rand[Math.floor(Math.random()*rand.length)];
  const embed = {
 "title": `Here is the winner!`,
 "description": doRandHT(),
-"color": 7584788,
+"color": 8993652,
 };
 message.channel.send({ embed });
 
@@ -101,7 +101,7 @@ client.on('message', message => {
   if (!channel) return;
   // Send the message, mentioning the member
   channel.send({embed: {
-  color: 10765745,
+  color: 8993652,
   description: `🎉Welcome ${member} to The Hangout!™ Please look at #rules-info before doing anything in the server. If you need any help, say -new in #bot-commands! Have fun!🎉`,
   "image": {
                 "url": "https://cdn.discordapp.com/attachments/499263085270401048/509543124683456512/Hangout2.jpg",
@@ -173,7 +173,7 @@ client.on('message', message => {
 const embed = {
   "title": "**Server Leaders**",
   "description": "The Leaders Of The Hangout™",
-  "color": 5134148,
+  "color": 8993652,
   "timestamp": "2018-11-07T23:32:42.204Z",
   "footer": {
     "icon_url": "https://cdn.discordapp.com/attachments/499263085270401048/509457397979283490/Hangout2.jpg",
