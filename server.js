@@ -18,7 +18,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === '=ping') {
-    	message.channel.send('Pong')
+    	message.channel.send("Pong :ping_pong:")
   	}
     
 });
@@ -118,7 +118,7 @@ message.author.send({ embed });
 });
 client.on('message', message => {
     if (message.content === '=Ping') {
-    	message.channel.send('Pong')
+    	message.channel.send("Pong :ping_pong:")
   	}
 });
 client.on('message', message => {
