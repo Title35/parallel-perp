@@ -273,6 +273,12 @@ message.author.send({ embed });
         message.channel.send("Check your inbox! 📧")
           	}
 });
+client.on('message', message => {
+    if (message.content === '?help') {
+    	message.channel.send("**Don't you dare use that nasty bot! How could you betray me?**")
+  	}
+    
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
