@@ -275,7 +275,7 @@ message.author.send({ embed });
 });
 client.on('message', message => {
     if (message.content === '?help') {
-    	message.channel.send("**Don't you dare use that nasty bot! How could you betray me?**")
+    	message.channel.send("**Don't you dare use that nasty bot! How could you betray me? Also Dyno is a little __]left__ sided.**")
   	}
     
 });
@@ -288,6 +288,12 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === '=hint') {
     	message.channel.send("**Good try! Maybe ask Dyno for some __Help__!**")
+  	}
+    
+});
+client.on('message', message => {
+    if (message.content === ']left') {
+    	message.channel.send("**You found the secret command! Congrats!**")
   	}
     
 });
