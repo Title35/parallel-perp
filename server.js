@@ -261,7 +261,7 @@ const embed = {
     },
     {
       "name": "💥President💥",
-      "value": "YourGerman_Salad"
+      "value": "DeputyRouge"
     },
     {
       "name": "⚡Vice President⚡",
@@ -279,6 +279,17 @@ client.on('message', message => {
   	}
     
 });
-
+client.on('message', message => {
+    if (message.content === '=secret') {
+    	message.channel.send("**Nope, you tried though! Heres a __Hint__ though: Search the channel history. Its not that hard to find with a __Hint__!**")
+  	}
+    
+});
+client.on('message', message => {
+    if (message.content === '=hint') {
+    	message.channel.send("**Good try! Maybe ask Dyno for some __Help__!**")
+  	}
+    
+});
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
