@@ -43,7 +43,7 @@ client.on('message', async message => {
     },
     {
       "name": "Info Commands",
-      "value": "Creator - '-creator' Tells you server creator! \nAuthor - '-author' Tells you bot author! \nLeaders - '-leaders' Sends you server leader list in DM's! \nHelp - '-help' Sends you Hangout™ Bot help in DM's! "
+      "value": "Creator - '-creator' Tells you server creator! \nAuthor - '-author' Tells you bot author! \nLeaders - '-leaders' Sends you server leader list in DM's! (Temp Down!) \nHelp - '-help' Sends you Hangout™ Bot help in DM's! "
     },
     {
       "name": "Other",
@@ -82,7 +82,7 @@ client.on('message', async message => {
     },
     {
       "name": "Info Commands",
-      "value": "Creator - '-creator' Tells you server creator! \nAuthor - '-author' Tells you bot author! \nLeaders - '-leaders' Sends you server leader list in DM's!  \nHelp - '=help' Sends you LifeLineRP™ Bot help in DM's! "
+      "value": "Creator - '-creator' Tells you server creator! \nAuthor - '-author' Tells you bot author! \nLeaders - '-leaders' Sends you server leader list in DM's! (Temp Down!) \nHelp - '=help' Sends you LifeLineRP™ Bot help in DM's! "
     },
     
     {
