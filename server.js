@@ -20,7 +20,7 @@ client.on('message', message=> {
 }
 });
 
-client.on('message', message => {
+client.on('message', async message => {
     if (message.content === '-help') {
     	message.channel.send("You've got mail! :mailbox_with_mail:")
   const embed = {
@@ -59,7 +59,7 @@ message.author.send({ embed });
     }
 });
 
-client.on('message', message => {
+client.on('message', async message => {
     if (message.content === '-Help') {
     	message.channel.send("You've got mail! :mailbox_with_mail:")
   	const embed = {
