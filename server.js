@@ -217,13 +217,14 @@ client.on('message', message => {
 });
   
 */
+/*
 client.on('message', message => {
     if (message.content === '-leaders') {
       Message.author.send("👑 **__LifeLine RP Leaders__** 👑 \n **Founder:** iiShouthern_Law \n **Assistants:** \n `-` Anthony V. \n `-` YourUniversal_Salad \n `-` KillCam \n `-` Blue_Lawzz \n `-` Deputy Rouge")
         message.channel.send("Check your inbox! 📧")
           	}
 }); 
-
+*/
 client.on('message', message => {
     if (message.content === '?help') {
     	message.channel.send("**Don't you dare use that nasty bot! How could you betray me? Also Dyno is a little __]left__ sided.**")
