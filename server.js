@@ -219,10 +219,10 @@ client.on('message', message => {
 */
 client.on('message', message => {
     if (message.content === '-leaders') {
-      Message.author.send("👑 **__LifeLine RP Leaders__** 👑 \n \n **Founder:** iiShouthern_Law \n **Assistants:** \n `-` Anthony V. \n `-` YourUniversal_Salad \n `-` KillCam \n `-` Blue_Lawzz \n `-` Deputy Rouge")
+      Message.author.send("👑 **__LifeLine RP Leaders__** 👑 \n **Founder:** iiShouthern_Law \n **Assistants:** \n `-` Anthony V. \n `-` YourUniversal_Salad \n `-` KillCam \n `-` Blue_Lawzz \n `-` Deputy Rouge")
         message.channel.send("Check your inbox! 📧")
           	}
-});
+}); 
 
 client.on('message', message => {
     if (message.content === '?help') {
