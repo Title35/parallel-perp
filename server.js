@@ -12,6 +12,13 @@ client.on('message', message => {
   	}
     
 });
+client.on('message', message => {
+    if (message.content === '-remove') {
+    	message.channel.send("Bye Bye!")
+        client.guilds.find(g => g.name === "San Andreas Independence RP™").leave()
+  	}
+    
+});
 client.on('message', message=> {
     if (message.isMentioned(client.user)) {
     message.channel.send('I am Awake!');
