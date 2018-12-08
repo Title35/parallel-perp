@@ -256,5 +256,17 @@ client.on('message', message => {
   	}
     
 });
+
+    client.on('message', message => {
+  // Send the message to a designated channel on a server:
+  const channel = member.guild.channels.find(ch => ch.name === 'server-news');
+  // Do nothing if the channel wasn't found on this server
+  if (!channel) return;
+ // Send the message, mentioning the member
+        if (message.content === '-bye') {
+      message.channel.send('@everyone, it has been fun watching over the server. I am sad to see the server shoutdown. My bot development team is shutting me down sadly. I wish everyone luck in the future. Sincerely, SAIRP Bot. ')
+  	}
+
+    });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
