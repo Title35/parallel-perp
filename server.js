@@ -259,7 +259,7 @@ client.on('message', message => {
 
     client.on('message', message => {
         if (message.content === '-bye') {
-      message.channel.send('@everyone, it has been fun watching over the server. I am sad to see the server shoutdown. My bot development team is shutting me down sadly. I wish everyone luck in the future. Sincerely, SAIRP Bot. ')
+      message.channel.send("@everyone, it has been fun watching over the server. I am sad to see the server shoutdown. My bot development team is shutting me down sadly. I wish everyone luck in the future. Sincerely, SAIRP Bot. ")
   	}
     });
 // THIS  MUST  BE  THIS  WAY
